@@ -1,0 +1,125 @@
+body {
+  line-height: 2rem;
+  font-family: "Poppins", system-ui;
+  text-align: center;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+header {
+  background: linear-gradient(
+    to right,
+    #831bcd,
+    #f9620b
+  ); /* Gradient background */
+  color: white;
+  font-family: "Poppins", system-ui;
+  font-weight: 100;
+  padding: 1.5rem;
+  position: fixed;
+  z-index: 3;
+  width: 100vw; /* Full viewport width */
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+}
+
+img {
+  margin-top: 10rem;
+  border-radius: 30px;
+  height: 30vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+section {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background: #fff; /* Background color */
+  transition: border-radius 0.3s ease, box-shadow 0.3s ease;
+  
+  
+}
+section:hover {
+  color: #ffffff;
+  border-radius: 5px; /* Change border radius on hover */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1); /* Add a subtle shadow on hover */
+}
+
+section:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  padding: 2px;
+  background: linear-gradient(
+    to right,
+    rgba(249, 98, 11),
+    rgba(131, 27, 205)
+  ); /* Light, subtle gradient */
+  z-index: -1;
+  
+}
+
+.name {
+  font-size: 25px;
+  font-weight: 600;
+  background: linear-gradient(to left, #f9620b, #831bcd); /* Gradient colors */
+  -webkit-background-clip: text; /* Clips the gradient background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text color transparent to show the gradient */
+}
+
+.objective {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 800px;
+  padding: 20px;
+}
+
+
+.textbox, .textboxarea {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 30px; /* or 10px for textarea if preferred */
+    border: 1px solid rgb(139, 139, 139); /* Set the border color and style */
+    width: 300px;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+.textboxarea {
+    padding-bottom: 3rem;
+    border-radius: 10px;
+}
+
+.send{
+    border-radius: 25px;
+    padding: 1rem;
+    border:none;
+    background-color: #000000;
+    color: white;
+    width: 150px;
+    
+}
+
+.dp img {
+  height: 30vh; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.dp img:hover {
+  transform: scale(1.1); /* Scales the image to 110% of its original size */
+}
